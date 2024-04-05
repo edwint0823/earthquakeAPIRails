@@ -46,5 +46,5 @@ group :development do
   # gem "spring"
 end
 
-gem 'httparty', '~> 0.13.7'
-gem 'rack-cors'
+gem 'httparty', '~> 0.21.0'
+gem 'rack-cors', '~> 2.0.2'
