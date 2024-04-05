@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mag: 1.5
+  place: MyString
+  time: 2024-04-05
+  url: MyText
+  tsunami: false
+  mag_type: MyString
+  title: MyString
+  longitude: 1
+  latitude: 1
+
+two:
+  mag: 1.5
+  place: MyString
+  time: 2024-04-05
+  url: MyText
+  tsunami: false
+  mag_type: MyString
+  title: MyString
+  longitude: 1
+  latitude: 1
