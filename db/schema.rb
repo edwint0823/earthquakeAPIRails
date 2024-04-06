@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_05_160129) do
     t.string "title", null: false
     t.integer "longitude", null: false
     t.integer "latitude", null: false
+    t.string "external_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -18,7 +18,8 @@ namespace :api do
             place: feature['properties']['place'],
             time: Time.at(feature['properties']['time'] / 1000).to_date,
             mag_type: feature['properties']['magType'],
-            title: feature['properties']['title']
+            title: feature['properties']['title'],
+            external_id: feature['id']
           )
           next if feature['properties']['title'].nil? || feature['properties']['url'].nil? ||
                   feature['properties']['place'].nil? || feature['properties']['magType'].nil? ||
@@ -37,7 +38,8 @@ namespace :api do
             mag_type: feature['properties']['magType'],
             title: feature['properties']['title'],
             longitude: feature['geometry']['coordinates'][0],
-            latitude: feature['geometry']['coordinates'][1]
+            latitude: feature['geometry']['coordinates'][1],
+            external_id: feature['id']
           )
         end
       end
