@@ -39,6 +39,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'dotenv-rails', require: 'dotenv/load'
   gem "debug", platforms: %i[ mri windows ]
+  gem 'rubocop', require: false
 end
 
 group :development do
@@ -46,3 +47,5 @@ group :development do
   # gem "spring"
 end
 
+gem 'httparty', '~> 0.21.0'
+gem 'rack-cors', '~> 2.0.2'
