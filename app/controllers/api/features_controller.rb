@@ -26,9 +26,9 @@ module Api
     end
 
     def validate_per_page
-      if @per_page > 1000
-        render json: {error: 'Error la cantidad maxima de registros a mostrar es de 1000'}
-      end
+      return unless @per_page > 1000
+
+      render json: {error: 'Error la cantidad maxima de registros a mostrar es de 1000'}, status: :bad_request
     end
 
     def set_mag_type
